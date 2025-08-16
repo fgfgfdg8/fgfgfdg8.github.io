@@ -10,6 +10,8 @@ pin: false
 math: true
 mermaid: true
 # media_subpath: /assets
+published: true
+sitemap: false
 image:
   path: assets/img/covers/bodie_nc.png
   alt: 灯塔啊，请指引我在黑夜中前行。

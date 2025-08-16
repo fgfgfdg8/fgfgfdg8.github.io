@@ -10,12 +10,14 @@ pin: true
 math: true
 mermaid: true
 # media_subpath: /assets
+published: true
+sitemap: false
 image:
   path: assets/img/covers/badlands_thunderstorms.png
   alt: 雷暴中的恶地国家公园。雷暴轰击的不只是土地，还有我龟裂的内心。
 ---
 
-# Chirpy 主题的官方排版模板
+## Chirpy 主题的官方排版模板
 > 官方排版示例：[Chirpy 官方排版示例](https://chirpy.cotes.page/posts/text-and-typography/)  
 > 官方排版示例源码：[Chirpy 官方排版示例源码](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-text-and-typography.md)
 {: .prompt-tip }
@@ -207,7 +209,7 @@ The image below will toggle dark/light mode based on theme preference, notice it
 [^fn-nth-2]: The 2nd footnote source
 ```
 
-# 公式测试
+## 公式测试
 
 <!-- Block math, keep all blank lines -->
 

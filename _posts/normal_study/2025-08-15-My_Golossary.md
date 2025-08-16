@@ -10,11 +10,13 @@ pin: true
 math: true
 mermaid: true
 # media_subpath: /assets
+published: true
+sitemap: false
 image:
   path: assets/img/covers/connery_pond.png
   alt: 雾气笼罩中朦胧的康纳利湖，一如悬浮于我脑海中的雾，缥缈不定，心绪难宁。
 ---
 
-# Fuzzing
+## Fuzzing
 
-# Article
+## Article

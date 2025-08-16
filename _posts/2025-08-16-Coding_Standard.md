@@ -10,13 +10,15 @@ pin: true
 math: true
 mermaid: true
 # media_subpath: /assets
+published: true
+sitemap: false
 image:
     path: assets/img/covers/barnetts_demesne.png
     alt: 雪原村落，宁静致远。
 ---
 
 
-# Git 提交信息规范
+## Git 提交信息规范
 ```text
 feat: 新功能的添加。
 示例: feat: 添加用户注册功能
@@ -42,6 +44,6 @@ revert: 撤销某次提交。
 示例: revert: 撤销添加用户注册功能
 ```
 
-# 版本号命名规范
+## 版本号命名规范
 参考1：[Semantic Versioning 2.0.0](https://semver.org/)  
 参考2：[软件项目、产品版本号的命名规则、定义、命名规范（git代码分支版本、项目产品文档版本）](https://blog.csdn.net/qq_29974981/article/details/121008029)
