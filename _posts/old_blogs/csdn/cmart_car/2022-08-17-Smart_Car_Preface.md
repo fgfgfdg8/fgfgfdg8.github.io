@@ -37,5 +37,5 @@ image:
 
 > 本专栏博文基于此赛道和多车编队组的程序进行写作。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/66a74cfbe8c46a1b59e9ff38d8805b2c.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/fgfgfdg8/ImageStage/main/img/202508171045328.png)
 
