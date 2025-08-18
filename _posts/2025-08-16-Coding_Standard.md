@@ -3,7 +3,7 @@ title: 【技术备忘录】 我的代码编写规范
 date: 2025-08-16 00:00:00 +0800
 description: 无论是编写测试代码，还是编写实际大型项目的代码，都需要有一个统一的规范，才能提高代码的可维护性。
 categories: [Technical, Memorandum]
-tags: [memorandum, conding]     # TAG names should always be lowercase
+tags: [memorandum, coding]     # TAG names should always be lowercase
 toc: true
 # comments: true
 pin: true

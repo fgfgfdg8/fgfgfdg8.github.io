@@ -18,8 +18,6 @@ image:
 
 来源：[菜鸟教程](https://www.runoob.com/git/git-tutorial.html)
 
-整理：暮雪归烟（3177449489@qq.com）
-
 ----
 -----
 ![Git 教程](https://raw.githubusercontent.com/fgfgfdg8/ImageStage/main/img/202208121713287.png)

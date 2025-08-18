@@ -18,8 +18,6 @@ image:
 
 来源：[菜鸟教程](https://www.runoob.com/markdown/)
 
-整理：暮雪归烟（3177449489@qq.com）
-
 -----
 
 ## 1.Markdown 标题

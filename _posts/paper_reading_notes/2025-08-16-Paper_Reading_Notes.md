@@ -3,7 +3,7 @@ title: 【论文阅读笔记】总目录
 date: 2025-08-16 00:00:00 +0800
 description: 所有论文阅读笔记博客的总目录
 categories: [Technical, Notes]
-tags: [memorandum, study notes]     # TAG names should always be lowercase
+tags: [memorandum, paper reading notes]     # TAG names should always be lowercase
 toc: true
 # comments: true
 pin: true
@@ -18,7 +18,8 @@ image:
 ---
 
 ## Fuzzing
-1. [Hopper: Interpretative Fuzzing for Libraries](../Hopper_Reading_Note)
+1. [Hopper: Interpretative Fuzzing for Libraries](../Hopper)
+2. [CMASan: Custom Memory Allocator-aware Address Sanitizer](../CMASan)
 
 ## LLM Agent
 

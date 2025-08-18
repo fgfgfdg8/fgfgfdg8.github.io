@@ -103,7 +103,3 @@ comments:
 1. [GitHub Pages documentation](https://docs.github.com/en/pages)
 2. [Jekyll documentation](https://jekyllrb.com/docs/)
 3. [Chirpy theme documentation](https://github.com/cotes2020/jekyll-theme-chirpy/wiki)
-4. [Markdown Origianl Syntax](https://daringfireball.net/projects/markdown/syntax)
-5. [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
-6. [Markdown Syntax from MarkText](https://github.com/marktext/marktext/blob/master/docs/MARKDOWN_SYNTAX.md)
-7. [Markdown 中文教程](https://markdown.com.cn/)
