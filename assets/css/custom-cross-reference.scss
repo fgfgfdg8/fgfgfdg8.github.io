@@ -1,0 +1,26 @@
+/* Custom styles for anchor offset */
+
+:root {
+  --site-header-height: 72px; /* adjust if your header size differs */
+}
+
+/* Ensure anchor targets are visible below fixed header */
+.content h1[id],
+.content h2[id],
+.content h3[id],
+.content h4[id],
+.content h5[id],
+.content h6[id] {
+  scroll-margin-top: calc(var(--site-header-height) + 1rem);
+}
+
+/* Optional: make anchor icons more visible */
+.content a.anchor {
+  opacity: 0.6;
+}
+
+@media (max-width: 992px) {
+  :root {
+    --site-header-height: 56px;
+  }
+}

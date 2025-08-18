@@ -1,12 +1,12 @@
 ---
-title: 【技术备忘录】 Ubuntu新机开荒配置
+title: 【技术备忘录】Ubuntu新机开荒配置
 date: 2025-08-18 17:00:00 +0800
 description: 在这里归档记录我的新机开荒配置使用的命令、环境变量、配置文件等信息，以保证即使切换机器后，也可以快速恢复工作环境的统一性。
 categories: [Technical, Memorandum]
 tags: [memorandum, coding]     # TAG names should always be lowercase
 toc: true
 # comments: true
-pin: true
+pin: false
 math: true
 mermaid: true
 # media_subpath: /assets
@@ -47,7 +47,7 @@ git clone https://gitee.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my
 git clone https://gitee.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 # 使安装的插件生效
 source ~/.zshrc
-# 配置powerlevel10k主题
+# 配置powerlevel10k主题，根据提示及个人偏好进行配置即可
 p10k configure
 ```
 
@@ -210,6 +210,73 @@ export PATH="$HOME/gems/bin:$PATH"
 
 ## 常用工具全家桶安装
 
+### apt直接管理的工具
 ```bash
-sudo apt install htop vim git -y
+sudo apt install htop vim git s-tui -y
 ```
+
+### 虚拟局域网组网工具（适用跨域远程访问）
+
+#### ZeroTier
+
+[ZeroTier官网](https://www.zerotier.com)
+
+##### 安装
+
+```bash
+curl -fsSL https://tailscale.com/install.sh | sh
+```
+##### 配置
+
+```bash
+sudo zerotier-cli join <在ZeroTier官网配置的网络ID>
+```
+##### 坑点
+
+#### Tailscale
+
+[Tailscale官网](https://www.tailscale.com)
+
+##### 安装
+```bash
+curl -s https://install.zerotier.com | sudo bash
+```
+##### 配置
+
+```bash
+sudo tailscale up
+# 然后在终端给出的链接中登录个人账户，根据提示将当前设备加入Tailnet内，即可完成设置
+```
+##### 坑点
+
+1. DNS问题  
+Tailscale默认会将`/etc/resolv.conf`中系统的DNS nameserver设置为其默认地址`100.100.100.100`，这有可能导致一些需要内网专用DNS服务器解析的应用解析失败（例如校园网登录页面），所以需要到[Tailscale设置](https://login.tailscale.com/admin/dns)中禁用DNS：
+![img](assets/img/env_config/new_ubuntu_setup/tailscale_dns.png)
+
+然后恢复`/etc/resolv.conf`的原始内容：
+```text
+# This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).
+# Do not edit.
+#
+# This file might be symlinked as /etc/resolv.conf. If you're looking at
+# /etc/resolv.conf and seeing this text, you have followed the symlink.
+#
+# This is a dynamic resolv.conf file for connecting local clients to the
+# internal DNS stub resolver of systemd-resolved. This file lists all
+# configured search domains.
+#
+# Run "resolvectl status" to see details about the uplink DNS servers
+# currently in use.
+#
+# Third party programs should typically not access this file directly, but only
+# through the symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a
+# different way, replace this symlink by a static file or a different symlink.
+#
+# See man:systemd-resolved.service(8) for details about the supported modes of
+# operation for /etc/resolv.conf.
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+search .
+```
+
