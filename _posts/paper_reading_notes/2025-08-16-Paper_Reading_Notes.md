@@ -20,6 +20,7 @@ image:
 ## Fuzzing
 1. [Hopper: Interpretative Fuzzing for Libraries](../Hopper)
 2. [CMASan: Custom Memory Allocator-aware Address Sanitizer](../CMASan)
+3. [PROMEFUZZ: A Knowledge-Driven Approach to Fuzzing Harness Generation with Large Language Models](../PromeFuzz)
 
 ## LLM Agent
 

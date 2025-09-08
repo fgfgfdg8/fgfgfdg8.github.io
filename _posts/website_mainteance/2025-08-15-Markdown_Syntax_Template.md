@@ -221,3 +221,6 @@ $$
 1. [Markdown 中文教程](https://markdown.com.cn/)
 2. [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 3. [Markdown Origianl Syntax](https://daringfireball.net/projects/markdown/syntax)
+4. [Emoji Cheat-Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/)
+5. [GitHub文档 Markdown基本格式语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+6. [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)

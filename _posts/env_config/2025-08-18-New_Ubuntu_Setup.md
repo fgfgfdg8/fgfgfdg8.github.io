@@ -208,11 +208,24 @@ export PATH="$HOME/gems/bin:$PATH"
 
 ```
 
+## SSH配置
+新安装的Ubuntu系统默认使能
+
+### 安全软件：`fail2ban`
+`fail2ban`可以防止爆破尝试密码，默认情况下，如果来自一个IP连续5次进行了错误的登录尝试，则禁止该IP进行SSH登录1分钟。
+
+```text
+To force fail2ban to ban repeated failed log in from local IPs, comment (prepend with #) the following line:
+ignoreip = 127.0.0.1/8 ::1
+in /etc/fail2ban/jail.conf
+```
+
+
 ## 常用工具全家桶安装
 
 ### apt直接管理的工具
 ```bash
-sudo apt install htop vim git s-tui -y
+sudo apt install curl htop vim git s-tui nload net-tools build-essential git-lfs tmux proxychains4 -y
 ```
 
 ### 虚拟局域网组网工具（适用跨域远程访问）
@@ -279,4 +292,12 @@ nameserver 127.0.0.53
 options edns0 trust-ad
 search .
 ```
+恢复完后重启DNS解析服务并检查状态：
+```bash
+sudo systemctl restart systemd-resolved
+resolvectl status
+```
 
+### Docker配置
+
+[Docker官方参考文档](https://docs.docker.com/get-started/)

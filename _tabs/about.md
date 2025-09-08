@@ -19,10 +19,16 @@ order: 4
 - Automatic Crash Analysis
 
 # Publications
+> To be continued
 
 # Trophy
+> To be continued
+
 
 # 参考学习资料 (from Prof. Chen)
+## How to Read a Paper
+- [How to Read a Paper](https://svr-sk818-web.cl.cam.ac.uk/keshav/papers/07/paper-reading.pdf)
+
 ## Technical writing
 - [The Mayfield Handbook of Technical & Scientific Writing](https://www.mit.edu/course/21/21.guide/toc.htm)
 - [Style: Lessons in Clarity and Grace](https://en.wikipedia.org/wiki/Style:_Lessons_in_Clarity_and_Grace)
@@ -32,8 +38,8 @@ order: 4
 - [LaTeX](https://en.wikibooks.org/wiki/LaTeX)
 - [Git](https://git-scm.com/book/en/v2)
 - [Pro Git中文版](https://www.progit.cn/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Ubuntu](https://ubuntu.com/desktop)
+- [Visual Studio Code](https://code.visualstudio.com/docs/)
+- [Ubuntu](https://help.ubuntu.com/)
 
 ## Languages
 - [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
